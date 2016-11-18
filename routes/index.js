@@ -6,4 +6,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* GET Map page. */
+router.get('/map/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+/* GET Review page. */
+router.get('/review/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
 module.exports = router;
