@@ -4,8 +4,24 @@ block content
     #headerwrap
         .container
             .row
-                .col-lg-6.col-lg-offset-3
-                    h1 _______  in  ________
+                .col.s12.m4.input-field
+                    select
+                        option(value='', selected='') I need
+                        option(value='1') Food
+                        option(value='2') Advice
+                        option(value='3') Assistance
+                    label I need
+                .col.s12.m4
+                    h1 in
+                .input-field.col.s12.m4
+                    select
+                        option(value='', disabled='', selected='') Choose your borough
+                        option(value='1') Manhattan
+                        option(value='2') Brooklyn
+                        option(value='3') Queens
+                        option(value='4') Bronx
+                        option(value='5') Staten Island
+                    label New York City
     #iconwrap
         .container
             .section
