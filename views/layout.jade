@@ -9,8 +9,8 @@ html
 
   body
     nav
-      .nav-wrapper.dark-primary-color
-        a.brand-logo.center.text-primary-color BounceBack
+      .nav-wrapper
+        a.brand-logo.center#brand BounceBack
         ul.right.hide-on-med-and-down
           li
             a(href='#')
@@ -20,3 +20,14 @@ html
 
     block content
     footer
+      #footerwrap
+        .container
+          .row.center
+            .col.s12.m4
+              p 888-NYC-WELL
+            //    can create a call via Twilio to 888-NYC-WELL
+            .col.s12.m4
+              p Created by Juanita Soranno, Matt Giordanella, Anthony Delgado & Joseph Pulaski for
+            .col.s12.m4
+                img.responsive-img(src='images/logo.png', alt='Community Access Logo')
+
