@@ -89,3 +89,12 @@ div#map_canvas {
   color: #757575;
   margin-left: 10px;
 
+input h1 {
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+  font-size: 80px;
+  /*font-weight: bold;*/
+  font-family: 'Lato', sans-serif;
+}
