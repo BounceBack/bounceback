@@ -2,9 +2,18 @@ body {
   /*padding: 50px;*/
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
+/*colors*/
+.dark-primary-color    { background: #303F9F; }
+.default-primary-color { background: #3F51B5; }
+.light-primary-color   { background: #C5CAE9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FFC107; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
 
 a {
-  color: #00B7FF;
+  color: #e3f2fd ;
 }
 #index-banner {
   /*rgb(76,175,80)*/
@@ -15,9 +24,9 @@ a {
   padding: 150px 0px;
   min-height: calc(100vh - 64px);
 }
-.text-upper {
-  text-transform: uppercase;
-}
+/*.text-upper {*/
+  /*text-transform: uppercase;*/
+/*}*/
 .services {
   padding: 65px 0px;
 }
@@ -31,10 +40,10 @@ div#map_canvas {
   height: 100vh !important;
 }
 
-.blue-smoke {
-  background-image: linear-gradient(rgba(183,28,28,0.75), rgba(183,28,28,1));
-  padding: 100px 0px;
-}
+/*.blue-smoke {*/
+  /*background-image: linear-gradient(rgba(183,28,28,0.75), rgba(183,28,28,1));*/
+  /*padding: 100px 0px;*/
+/*}*/
 .btn-ghost {
   background: transparent !important;
   border: 1px solid white;
@@ -51,11 +60,11 @@ div#map_canvas {
 footer.page-footer {
   margin-top: 0;
 }
-.typed-cursor{
-  opacity: 1;
-  -webkit-animation: blink 1s infinite;
-  -moz-animation: blink 1s infinite;
-  animation: blink 1s infinite;
+/*.typed-cursor{*/
+  /*opacity: 1;*/
+  /*-webkit-animation: blink 1s infinite;*/
+  /*-moz-animation: blink 1s infinite;*/
+  /*animation: blink 1s infinite;*/
 }
 @keyframes blink{
   0% { opacity:1; }
@@ -222,4 +231,44 @@ div#controls div#log p {
 
 .m0 {
   margin: 0 !important;
+}
+
+#headerwrap {
+  background: url(../images/clasped_hands.jpg) no-repeat center top;
+  margin-top: -70px;
+  padding-top: 250px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#headerwrap h1 {
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+  font-size: 80px;
+  font-weight: bold;
+}
+.material-icons { color: #FFC107; }
+/*.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }*/
+
+#iconwrap {
+  background-color:#303F9F;
+}
+
+#iconwrap h5 {
+  color: #ffffff;
 }
