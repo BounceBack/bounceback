@@ -2,6 +2,14 @@ body {
   /*padding: 50px;*/
   font-family: 'Lato', sans-serif;
 }
+
+
+.logo-ca {
+  height: 100px;
+  padding: 15px;
+}
+
+
 /*colors*/
 .dark-primary-color    { background: #303F9F; }
 .default-primary-color { background: #3F51B5; }
@@ -30,10 +38,6 @@ div#map_canvas {
   z-index: -2;
   height: 100vh !important;
 }
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
 
 
@@ -71,7 +75,7 @@ div#map_canvas {
 /*.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }*/
 
 #iconwrap {
-  background-color:#303F9F;
+  background-color:#066699;
 }
 
 #iconwrap h5 {
@@ -88,7 +92,7 @@ div#map_canvas {
 #footerwrap p {
   color: #757575;
   margin-left: 10px;
-
+}
 input h1 {
   color: #FFFFFF;
   padding-top: 10px;
