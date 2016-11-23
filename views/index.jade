@@ -4,25 +4,39 @@ block content
     #headerwrap
         .container
             .row
-                .col.s12.m4.input-field
-                    select.h1
-                        option(value='', disabled='', selected='') I need
-                        option(value='1') Food
-                        option(value='2') Advice
-                        option(value='3') Assistance
-                    //label I need
-                .col.s12.m4
-                    h1 in
-                .input-field.col.s12.m4
-                    select.h1
-                        option(value='', disabled='', selected='') Choose your borough
-                        option(value='1') Manhattan
-                        option(value='2') Brooklyn
-                        option(value='3') Queens
-                        option(value='4') Bronx
-                        option(value='5') Staten Island
-                    //label New York City
-    #iconwrap
+                .col.s12
+                    h3.center
+                        a#software-selected.dropdown-button(href='#jobs-container ', data-beloworigin='true', data-activates='dropdown-software') Help
+                        ul#dropdown-software.dropdown-content
+                            li
+                                a.blue-text(href='#!') Select Service
+                            li.divider
+                            li
+                                a.blue-text.select-software(href='#', data-software='Node') Help
+                            li
+                                a.blue-text.select-software(href='#', data-software='React') Housing
+                            li
+                                a.blue-text.select-software(href='#', data-software='Angular') Food
+                        |                  in 
+                        a#location-selected.dropdown-button(href='#jobs-container ', data-beloworigin='true', data-activates='dropdown-state') New York City
+                        ul#dropdown-state.dropdown-content.blue-text
+                            li
+                                a.blue-text(href='#!') Select State
+                            li.divider
+                            li
+                                a.blue-text.select-location(href='#', data-location='HI') New York City
+                            li
+                                a.blue-text.select-location(href='#', data-location='AK') Bronx
+                            li
+                                a.blue-text.select-location(href='#', data-location='FL') Brooklyn
+                            li
+                                a.blue-text.select-location(href='#', data-location='SC') Queens
+                            li
+                                a.blue-text.select-location(href='#', data-location='GA') Staten Island
+                            li
+                                a.blue-text.select-location(href='#', data-location='GA') Manhattan
+
+    #iconwrap.blue.darken-3
         .container
             .section
                 // Icon Section
@@ -32,38 +46,38 @@ block content
                             h2.center
                                 a(href='#')
                                     i.large.material-icons restaurant
-                                    h5.center.text-primary-color Find Food
+                                    h5.center.white-text Find Food
                     .col.s12.m4
                         .icon-block
                             h2.center
                                 a(href='#')
                                     i.large.material-icons healing
-                                    h5.center Find Doctors
+                                    h5.center.white-text Find Doctors
                     .col.s12.m4
                         .icon-block
                             h2.center
                                 a(href='#')
                                     i.large.material-icons home
-                                    h5.center Find Shelter
+                                    h5.center.white-text Find Shelter
                 .row
                     .col.sm12.m4
                         .icon-block
                             h2.center
                                 a(href='#')
                                     i.large.material-icons work
-                                    h5.center Find Jobs
+                                    h5.center.white-text Find Jobs
                     .col.s12.m4
                         .icon-block
                             h2.center
                                 a(href='#')
                                     i.large.material-icons account_balance
-                                    h5.center Find Lawyers
+                                    h5.center.white-text Find Lawyers
                     .col.s12.m4
                         .icon-block
                             h2.center
                                 a(href='#')
                                     i.large.material-icons report_problem
-                                    h5.center Fight Addiction
+                                    h5.center.white-text Fight Addiction
         br
         br
 
