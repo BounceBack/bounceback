@@ -6,7 +6,8 @@ var map;
 function initMap() {
     geocoder = new google.maps.Geocoder();
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
+        zoom: 12,
+        scrollwheel: false,
         center: {lat: 40.824169, lng: -73.915452},
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
