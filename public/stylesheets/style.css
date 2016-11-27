@@ -9,6 +9,16 @@ body {
   margin: 5px;
 }
 
+div#iconwrap {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer.page-footer {
+  margin-top: 0 !important;
+}
 
 /*colors*/
 .dark-primary-color    { background: #303F9F; }

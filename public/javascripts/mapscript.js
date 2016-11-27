@@ -22,16 +22,17 @@ function initMap() {
                 position: new google.maps.LatLng(markers[i].lat, markers[i].long),
                 map: map
             });
-            var message = markers[i].name
+            var message = markers[i].name;
+            var data = markers[i];
 
-            addName(marker, message)
+            addName(marker, message,data);
 
         }
 
     })
 };
 
-function addName(marker, message) {
+function addName(marker, message, data) {
     infowindow = new google.maps.InfoWindow({
         content: message
     });
@@ -39,7 +40,10 @@ function addName(marker, message) {
     marker.addListener('click', function() {
         infowindow.setContent(message);
         infowindow.open(marker.get('map'), marker);
-        $('#form').text("<p>"+ message+"</p>")
+        $('#form').text("<p>"+ data.strAdress+"</p>");
+
+        // map.setCenter(marker.getPosition());
+        map.panTo(marker.getPosition());
 
     });
 }
