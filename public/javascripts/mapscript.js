@@ -15,7 +15,7 @@ function initMap() {
     //   map: map
     // });
     var infoWindow = new google.maps.InfoWindow();
-    $("#food").on("click", function(){
+    $(".food").on("click", function(){
         for (i = 0; i < markers.length; i++) {
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(markers[i].lat, markers[i].long),

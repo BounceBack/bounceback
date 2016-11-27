@@ -100,7 +100,7 @@ input h1 {
   padding: 10px;
   background: black;
   height: auto;
-  opacity: .45; /* Set the opacity for a slightly transparent Google Form */
+  opacity: .55; /* Set the opacity for a slightly transparent Google Form */
   color: white;
   float: left;
 }

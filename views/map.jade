@@ -1,25 +1,69 @@
 extends layout
 
 block content
-    h3 My Google Maps Demo
-    button#food Food
-    button#clear Clear
-    div
-        p
-            form
-                | Name:
-                input#name(type='text')
-                |           Address:
-                input#address(type='textbox')
-                |           Borough:
-                input#boro(type='text')
-                |           Phone:
-                input#phone(type='text')
-                |           Comments:
-                input#comments(type='text')
-                input(type='button', value='Encode', onclick='codeAddress()')
-    #map
-    #form
+
+    #iconwrap.blue.darken-3
+        .container
+            .section
+                h3.center.white-text Get to the nearest
+                // Icon Section
+                .row
+                    .col.sm12.m4
+                        .icon-block
+                            h2.center.food
+                                a(href='#')
+                                    i.large.material-icons restaurant
+                                    h5.center.white-text Food Pantry
+                    .col.s12.m4
+                        .icon-block
+                            h2.center
+                                a(href='#')
+                                    i.large.material-icons healing
+                                    h5.center.white-text Doctor's Office
+                    .col.s12.m4
+                        .icon-block
+                            h2.center
+                                a(href='#')
+                                    i.large.material-icons home
+                                    h5.center.white-text Shelter
+                .row
+                    .col.sm12.m4
+                        .icon-block
+                            h2.center
+                                a(href='#')
+                                    i.large.material-icons work
+                                    h5.center.white-text Employment Agency
+                    .col.s12.m4
+                        .icon-block
+                            h2.center
+                                a(href='#')
+                                    i.large.material-icons account_balance
+                                    h5.center.white-text Law Office
+                    .col.s12.m4
+                        .icon-block
+                            h2.center
+                                a(href='#')
+                                    i.large.material-icons report_problem
+                                    h5.center.white-text Addict Program
+        br
+        br
+
+        #map
+        #form
+            div
+                p
+                    form
+                        | Or search for a specific place:
+                        input#name(type='text')
+                        |           Address:
+                        input#address(type='text')
+                        |           Borough:
+                        input#boro(type='text')
+                        |           Phone:
+                        input#phone(type='text')
+                        //|           Comments:
+                        //input#comments(type='text')
+                        input.blue.darken-3(type='button', value='Encode', onclick='codeAddress()')
     script(type='text/javascript', src='javascripts/locations.js')
     script(type='text/javascript', src='javascripts/mapscript.js')
     script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqEQmlJFm-bqFypQIalGFRynl7QxI2iO8&callback=initMap')
