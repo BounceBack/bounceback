@@ -1,5 +1,5 @@
-console.log(markers[0].lat)
-console.log(markers[0].long)
+console.log(foodmarkers[0].lat)
+console.log(foodmarkers[0].long)
 var geocoder;
 var map;
 
@@ -17,13 +17,12 @@ function initMap() {
     // });
     var infoWindow = new google.maps.InfoWindow();
     $(".food").on("click", function(){
-        for (i = 0; i < markers.length; i++) {
+        for (i = 0; i < foodmarkers.length; i++) {
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(markers[i].lat, markers[i].long),
+                position: new google.maps.LatLng(foodmarkers[i].lat, foodmarkers[i].long),
                 map: map
             });
-            var message = markers[i].name
-
+            var message = foodmarkers[i].name
             addName(marker, message)
 
         }
@@ -39,8 +38,7 @@ function addName(marker, message) {
     marker.addListener('click', function() {
         infowindow.setContent(message);
         infowindow.open(marker.get('map'), marker);
-        $('#form').text("<p>"+ message+"</p>")
-
+        $('#form').html(message);
     });
 }
 

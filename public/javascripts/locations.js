@@ -1,4 +1,4 @@
-var markers= [
+var foodmarkers= [
     {
         "name": "Bronx Defenders",
         "strAdress": "360 161st St",
