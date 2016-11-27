@@ -5,36 +5,15 @@ block content
         .container
             .row
                 .col.s12
-                    h3.center
-                        a#software-selected.dropdown-button(href='#jobs-container ', data-beloworigin='true', data-activates='dropdown-software') Help
-                        ul#dropdown-software.dropdown-content
-                            li
-                                a.blue-text(href='#!') Select Service
-                            li.divider
-                            li
-                                a.blue-text.select-software(href='#', data-software='Node') Help
-                            li
-                                a.blue-text.select-software(href='#', data-software='React') Housing
-                            li
-                                a.blue-text.select-software(href='#', data-software='Angular') Food
-                        |                  in 
-                        a#location-selected.dropdown-button(href='#jobs-container ', data-beloworigin='true', data-activates='dropdown-state') New York City
-                        ul#dropdown-state.dropdown-content.blue-text
-                            li
-                                a.blue-text(href='#!') Select State
-                            li.divider
-                            li
-                                a.blue-text.select-location(href='#', data-location='HI') New York City
-                            li
-                                a.blue-text.select-location(href='#', data-location='AK') Bronx
-                            li
-                                a.blue-text.select-location(href='#', data-location='FL') Brooklyn
-                            li
-                                a.blue-text.select-location(href='#', data-location='SC') Queens
-                            li
-                                a.blue-text.select-location(href='#', data-location='GA') Staten Island
-                            li
-                                a.blue-text.select-location(href='#', data-location='GA') Manhattan
+                    nav.blue.darken-3
+                        .nav-wrapper
+                            form
+                                .input-field
+                                    input#search(type='search', required='')
+                                    label(for='search')
+                                        i.material-icons search
+                                    i.material-icons close
+
 
     #iconwrap.blue.darken-3
         .container
@@ -80,4 +59,14 @@ block content
                                     h5.center.white-text Fight Addiction
         br
         br
+
+    .container-fluid
+        .row
+            .col.s12.m6
+                h3.center.light-blue-text.text-darken-4 MISSION
+                p.flow-text
+                    | Community Access expands opportunities for people living with mental health concerns to recover from trauma and discrimination through affordable housing, training, advocacy and healing-focused services. We are built upon the simple truth that people are experts in their own lives.
+            .col.s12.m6
+                .video-container
+                    iframe(width='853', height='480', src='//www.youtube.com/embed/wY0IgBdVML0?rel=0', frameborder='0', allowfullscreen='')
 

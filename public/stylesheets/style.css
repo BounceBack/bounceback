@@ -5,8 +5,8 @@ body {
 
 
 .logo-ca {
-  height: 100px;
-  padding: 15px;
+  max-height: 80%;
+  margin: 5px;
 }
 
 
@@ -43,34 +43,18 @@ div#map_canvas {
 
 #headerwrap {
   background: url(../images/clasped_hands.jpg) no-repeat center top;
-  margin-top: -70px;
   padding-top: 250px;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
   min-height: 650px;
   width: 100%;
-
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
+#headerwrap nav {
 
-#headerwrap h1, .input-field label {
-  color: #FFFFFF;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  letter-spacing: 4px;
-  font-size: 80px;
-  /*font-weight: bold;*/
-  font-family: 'Lato', sans-serif;
-}
+   opacity: .9;
+ }
 .material-icons { color: #FFC107; }
 /*.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }*/
 

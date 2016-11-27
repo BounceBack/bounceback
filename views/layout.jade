@@ -8,28 +8,40 @@ html
     link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
 
   body
-    nav
-      .nav-wrapper
-        img.logo-ca(src='images/logo.png', alt='Community Access Logo')
-        ul.right.hide-on-med-and-down
-          //li
-          //  a(href='#')
-          //    i.material-icons.left search
-          li
-            a.btn.accent-color(href='#') Login
+    .navbar-fixed
+      nav.white
+        .nav-wrapper
+          img.logo-ca(src='images/logo.png', alt='Community Access Logo')
+          ul.right
+            li
+              a.btn.amber.btn-large(href='#') Login
 
     block content
-    footer
-      #footerwrap
+    footer.page-footer.blue.darken-3
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text About Community Access
+            p.grey-text.text-lighten-4
+              | Founded in 1974, Community Access is a pioneer of supportive housing and social services in NYC for people with mental health concerns. We proudly lead advocacy efforts that rally our community to promote human rights, social justice, and economic opportunities for all.
+          .col.l4.offset-l2.s12
+            h6.white-text Made with
+                span.red-text  ❤
+                  span.white-text  by
+            ul
+              li
+                a.grey-text.text-lighten-3(href='#!') Anthony Delgado
+              li
+                a.grey-text.text-lighten-3(href='#!') Joseph Pulaski
+              li
+                a.grey-text.text-lighten-3(href='#!') Matt Giordanella
+              li
+                a.grey-text.text-lighten-3(href='#!') Juanita Soranno
+      .footer-copyright
         .container
-          .row.center
-            .col.s12.m4
-              p 888-NYC-WELL
-            //    can create a call via Twilio to 888-NYC-WELL
-            .col.s12.m4
-              p Created by Juanita Soranno, Matt Giordanella, Anthony Delgado & Joseph Pulaski for
-            .col.s12.m4
-                img.responsive-img(src='images/logo.png', alt='Community Access Logo')
+          | © 2017 Community Access
+          a.grey-text.text-lighten-4.right(href='#!') Made at RCB
+
 
   script(src='/bower_components/jquery/dist/jquery.js')
   script(src='/bower_components/materialize/dist/js/materialize.js')
