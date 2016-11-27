@@ -1,3 +1,25 @@
 extends layout
 
 block content
+    h3 My Google Maps Demo
+    button#food Food
+    button#clear Clear
+    div
+        p
+            form
+                | Name:
+                input#name(type='text')
+                |           Address:
+                input#address(type='textbox')
+                |           Borough:
+                input#boro(type='text')
+                |           Phone:
+                input#phone(type='text')
+                |           Comments:
+                input#comments(type='text')
+                input(type='button', value='Encode', onclick='codeAddress()')
+    #map
+    #form
+    script(type='text/javascript', src='locations.js')
+    script(type='text/javascript', src='script.js')
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqEQmlJFm-bqFypQIalGFRynl7QxI2iO8&callback=initMap')

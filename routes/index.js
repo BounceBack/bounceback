@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /* GET Map page. */
 router.get('/map/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('map', { title: 'Express' });
 });
 
 /* GET Review page. */
