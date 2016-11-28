@@ -51,14 +51,24 @@ function initMap() {
                 map: map
             });
 
-            var message = foodmarkers[i].name;
             var data = foodmarkers[i];
-            var newCard = makeCard(message, data.strAdress);
-            cardview.append(newCard);
-            addName(marker, message,data);
+
+            addName(marker, data.name,data);
         }
 
-        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 500);
+        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 100);
+
+        setTimeout(function(){
+
+            for (i = 0; i < foodmarkers.length; i++) {
+
+                var data = foodmarkers[i];
+                var newCard = makeCard(data.name, data.strAdress);
+
+                cardview.prepend(newCard);
+            }
+
+        }, 500);
 
     })
 };

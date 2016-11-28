@@ -25,7 +25,7 @@ body {
   background-color: rgba(21,101,192, .85) !important;
   z-index: 2;
 
-  transition: all .5s;
+  transition: all .25s;
   position: absolute;
   top: 0;
 }
@@ -170,7 +170,9 @@ input h1 {
 } /* this will style the thumb, ignoring the track */
 
 ::-webkit-scrollbar-button {
-  background-color: #01579b;
+  /*background-color: #01579b;*/
+  background-color: #ffc107;
+
 } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
 
 ::-webkit-scrollbar-corner {
