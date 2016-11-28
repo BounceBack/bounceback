@@ -12,10 +12,11 @@ html
     .navbar-fixed
       nav.white
         .nav-wrapper
-          img.logo-ca(src='images/logo.png', alt='Community Access Logo')
+          a(href='/')
+           img.logo-ca(src='images/logo.png', alt='Community Access Logo')
           ul.right
             li
-              a.btn.amber.btn-large(href='#') Login
+              a.btn.amber(href='#') Login
 
     block content
     footer.page-footer.blue.darken-3
@@ -41,9 +42,12 @@ html
       .footer-copyright
         .container
           | © 2017 Community Access
-          a.grey-text.text-lighten-4.right(href='#!') Made at RCB
+          //a.grey-text.text-lighten-4.right(href='#!') Made at RCB
 
 
   script(src='/bower_components/jquery/dist/jquery.js')
   script(src='/bower_components/materialize/dist/js/materialize.js')
   script(src='/javascripts/main.js')
+  script(type='text/javascript', src='javascripts/locations.js')
+  script(type='text/javascript', src='javascripts/mapscript.js')
+  script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqEQmlJFm-bqFypQIalGFRynl7QxI2iO8&callback=initMap')

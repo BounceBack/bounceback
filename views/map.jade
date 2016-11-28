@@ -4,11 +4,32 @@ block content
 
     #iconwrap.blue.darken-3
         .container
-            .section
-                h3.center.white-text Get to the nearest
-                // Icon Section
+            .section.sidebar-ca
                 .row
-                    .col.sm12.m4
+                    .input-field.col.s12
+                        select.icons.white-text
+                            option(value='', disabled='', selected='').white-text Select a Service
+                            option.left.circle(value='') Food Pantry
+
+                            option.left.circle(value='') Doctor's Office
+
+                            option.left.circle(value='') Shelter
+
+                            option.left.circle(value='') Employment Agency
+
+                            option.left.circle(value='') Law Office
+
+                            option.left.circle(value='') Addict Program
+
+                        label.white-text Find the nearest
+                .row#map-cards
+
+
+            .section.homepage-ca
+                .row
+                    .col.s12
+                        h3.center.white-text Find the nearest
+                    .col.s12.m4
                         .icon-block
                             h2.center.food
                                 a(href='#')
@@ -27,7 +48,7 @@ block content
                                     i.large.material-icons home
                                     h5.center.white-text Shelter
                 .row
-                    .col.sm12.m4
+                    .col.s12.m4
                         .icon-block
                             h2.center.work
                                 a(href='#')
@@ -48,22 +69,4 @@ block content
         br
         br
 
-        #map
-        #form
-            div
-                p
-                    form
-                        | Or search for a specific place:
-                        input#name(type='text')
-                        |           Address:
-                        input#address(type='text')
-                        |           Borough:
-                        input#boro(type='text')
-                        |           Phone:
-                        input#phone(type='text')
-                        //|           Comments:
-                        //input#comments(type='text')
-                        input.blue.darken-3(type='button', value='Encode', onclick='codeAddress()')
-    script(type='text/javascript', src='javascripts/locations.js')
-    script(type='text/javascript', src='javascripts/mapscript.js')
-    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqEQmlJFm-bqFypQIalGFRynl7QxI2iO8&callback=initMap')
+    #map

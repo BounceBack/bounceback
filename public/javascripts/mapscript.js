@@ -3,13 +3,36 @@ console.log(foodmarkers[0].long)
 var geocoder;
 var map;
 
+function makeCard(title, address) {
+    var card = '<div class="col s12"><div class="card"><div class="card-content"><span class="card-title">' + title + '</span>';
+    card += '<p>' + address + '</p></div>';
+    card += '<div class="card-action"><a class="waves-effect waves-light btn blue darken-3  white-text"><i class="material-icons left  white-text">call</i>Call</a> <a class="waves-effect waves-light btn blue darken-3  white-text"><i class="material-icons left  white-text">navigation</i>Find</a></div>';
+    card += '</div></div>';
+    return card;
+}
+
 function initMap() {
     geocoder = new google.maps.Geocoder();
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
         scrollwheel: false,
         center: {lat: 40.824169, lng: -73.915452},
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            position: google.maps.ControlPosition.TOP_CENTER
+        },
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_CENTER
+        },
+        scaleControl: true,
+        streetViewControl: true,
+        streetViewControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_TOP
+        },
+        fullscreenControl: true
     });
     // var marker = new google.maps.Marker({
     //   position: bronx,
@@ -17,6 +40,11 @@ function initMap() {
     // });
     var infoWindow = new google.maps.InfoWindow();
     $(".food").on("click", function(){
+
+        var cardview = $('#map-cards');
+
+        cardview.empty();
+
         for (i = 0; i < foodmarkers.length; i++) {
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(foodmarkers[i].lat, foodmarkers[i].long),
@@ -25,10 +53,12 @@ function initMap() {
 
             var message = foodmarkers[i].name;
             var data = foodmarkers[i];
-
+            var newCard = makeCard(message, data.strAdress);
+            cardview.append(newCard);
             addName(marker, message,data);
-
         }
+
+        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 500);
 
     })
 };
