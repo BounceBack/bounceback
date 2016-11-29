@@ -102,7 +102,129 @@ function initMap() {
             }
 
         }, 500);
+    $(".home").on("click", function(){
 
+        var cardview = $('#map-cards');
+
+        cardview.empty();
+
+        for (i = 0; i < homemarkers.length; i++) {
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(homemarkers[i].lat, homemarkers[i].long),
+                map: map
+            });
+
+            var data = homemarkers[i];
+
+            addName(marker, data.name,data);
+        }
+
+        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 100);
+
+        setTimeout(function(){
+
+            for (i = 0; i < homemarkers.length; i++) {
+
+                var data = homemarkers[i];
+                var newCard = makeCard(data.name, data.strAdress);
+
+                cardview.prepend(newCard);
+            }
+
+        }, 500);
+
+    $(".work").on("click", function(){
+
+        var cardview = $('#map-cards');
+
+        cardview.empty();
+
+        for (i = 0; i < workmarkers.length; i++) {
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(workmarkers[i].lat, workmarkers[i].long),
+                map: map
+            });
+
+            var data = workmarkers[i];
+
+            addName(marker, data.name,data);
+        }
+
+        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 100);
+
+        setTimeout(function(){
+
+            for (i = 0; i < workmarkers.length; i++) {
+
+                var data = workmarkers[i];
+                var newCard = makeCard(data.name, data.strAdress);
+
+                cardview.prepend(newCard);
+            }
+
+        }, 500);
+
+    $(".law").on("click", function(){
+
+        var cardview = $('#map-cards');
+
+        cardview.empty();
+
+        for (i = 0; i < lawmarkers.length; i++) {
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(lawmarkers[i].lat, lawmarkers[i].long),
+                map: map
+            });
+
+            var data = lawmarkers[i];
+
+            addName(marker, data.name,data);
+        }
+
+        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 100);
+
+        setTimeout(function(){
+
+            for (i = 0; i < lawmarkers.length; i++) {
+
+                var data = lawmarkers[i];
+                var newCard = makeCard(data.name, data.strAdress);
+
+                cardview.prepend(newCard);
+            }
+
+        }, 500);
+
+    $(".addict").on("click", function(){
+
+        var cardview = $('#map-cards');
+
+        cardview.empty();
+
+        for (i = 0; i < drugmarkers.length; i++) {
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(drugmarkers[i].lat, drugmarkers[i].long),
+                map: map
+            });
+
+            var data = drugmarkers[i];
+
+            addName(marker, data.name,data);
+        }
+
+        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 100);
+
+        setTimeout(function(){
+
+            for (i = 0; i < drugmarkers.length; i++) {
+
+                var data = drugmarkers[i];
+                var newCard = makeCard(data.name, data.strAdress);
+
+                cardview.prepend(newCard);
+            }
+
+        }, 500);
     })
 };
 

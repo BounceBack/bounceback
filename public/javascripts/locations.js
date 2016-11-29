@@ -9633,4 +9633,111 @@ var healthmarkers= [
     }
 
 ];
+var homemarkers= [
+    {
+        "name": "Safe Horizon, Inc",
+        "strAdress": "214 West 30th Street",
+        "zip": "",
+        "boro": "Manhattan",
+        "lat": "40.74862808",
+        "long": "-73.9933831064085",
+        "num": "212-268-3943"
+    },
+];
+var workmarkers= [
+    {
+        "name": "New York City Free Clinic",
+        "strAdress": "16 East 16th Street",
+        "zip": "10003",
+        "boro": "Manhattan",
+        "lat": "40.739449",
+        "long": "-73.982105",
+        "num": "917-544-0735"
+    },
+];
+var lawmarkers= [
+    {
+        "name": "City Bar Justice Center’s Legal Hotline",
+        "strAdress": "42 West 44th Street",
+        "zip": "10036",
+        "boro": "Manhattan",
+        "lat": "40.755479",
+        "long": "-73.982179",
+        "num": "212-626-7383"
+    },
+    {
+        "name": "Monday Night Law Downtown",
+        "strAdress": "New York County Lawyers’ Association, 14 Vesey Street",
+        "zip": "10036",
+        "boro": "Manhattan",
+        "lat": "40.712784",
+        "long": "-74.005941",
+        "num": "212-626-7373"
+    },
+    {
+        "name": "LawHelpNY",
+        "strAdress": "151 West 30th Street",
+        "zip": "10036",
+        "boro": "Manhattan",
+        "lat": "40.748439",
+        "long": "-73.991813",
+        "num": "212-626-7373"
+    },
+    {
+        "name": "Legal Aid Society: Brooklyn Neighborhood Office - Family Law/Domestic Violence Unit",
+        "strAdress": "111 Livingston Street, 7th floor",
+        "zip": "11201",
+        "boro": "Brooklyn",
+        "lat": "40.691389",
+        "long": "-73.989631",
+        "num": "718-722-3100"
+    },
+    {
+        "name": "Her Justice",
+        "strAdress": "80 Centre Street, 5th Floor",
+        "zip": "10013",
+        "boro": "Manhattan",
+        "lat": "40.715453",
+        "long": "-74.001570",
+        "num": "718-562-8181"
+    }
+];
+var drugmarkers= [
+    {
+        "name": "New York Center for Living OP Outpatient Clinic",
+        "strAdress": "224-226 E 52nd St",
+        "zip": "10022",
+        "boro": "Manhattan",
+        "lat": "40.756434",
+        "long": "-73.968876",
+        "num": "212-712-8800"
+    },
+    {
+        "name": "Freedom Institute Inc. OP Outpatient Clinic",
+        "strAdress": "515 Madison Ave",
+        "zip": "10022",
+        "boro": "Manhattan",
+        "lat": "40.906693",
+        "long": "-74.157450",
+        "num": "212-838-0044"
+    },
+    {
+        "name": "Joan And Sanford Weill Med Clge OP Outpatient Clinic",
+        "strAdress": "56 West 45th St",
+        "zip": "10036",
+        "boro": "Manhattan",
+        "lat": "40.756177",
+        "long": "-73.981851",
+        "num": "212-746-5917 "
+    },
+    {
+        "name": "VPD Treatment & Research Institute OTP Methadone Clinic",
+        "strAdress": "503 E 70th St",
+        "zip": "10021",
+        "boro": "Manhattan",
+        "lat": "40.770070",
+        "long": "-73.958025",
+        "num": "212-746-1252  "
+    },
+];
 //module.exports = markers;
