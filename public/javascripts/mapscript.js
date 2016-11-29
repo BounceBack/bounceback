@@ -70,9 +70,9 @@ function initMap() {
 
         }, 500);
 
-    })
+    });
 
-    $(".health").on("click", function(){
+    $(".health").on("click", function() {
 
         var cardview = $('#map-cards');
 
@@ -86,12 +86,14 @@ function initMap() {
 
             var data = healthmarkers[i];
 
-            addName(marker, data.name,data);
+            addName(marker, data.name, data);
         }
 
-        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 100);
+        setTimeout(function () {
+            $('#iconwrap').addClass('open');
+        }, 100);
 
-        setTimeout(function(){
+        setTimeout(function () {
 
             for (i = 0; i < healthmarkers.length; i++) {
 
@@ -102,6 +104,7 @@ function initMap() {
             }
 
         }, 500);
+    });
     $(".home").on("click", function(){
 
         var cardview = $('#map-cards');
@@ -132,6 +135,7 @@ function initMap() {
             }
 
         }, 500);
+    });
 
     $(".work").on("click", function(){
 
@@ -163,6 +167,7 @@ function initMap() {
             }
 
         }, 500);
+    });
 
     $(".law").on("click", function(){
 
@@ -194,6 +199,7 @@ function initMap() {
             }
 
         }, 500);
+    });
 
     $(".addict").on("click", function(){
 
@@ -225,7 +231,7 @@ function initMap() {
             }
 
         }, 500);
-    })
+    });
 };
 
 function addName(marker, message, data) {

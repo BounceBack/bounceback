@@ -9646,13 +9646,31 @@ var homemarkers= [
 ];
 var workmarkers= [
     {
-        "name": "New York City Free Clinic",
-        "strAdress": "16 East 16th Street",
-        "zip": "10003",
+        "name": "Career Group Inc.",
+        "strAdress": "1212 Sixth Ave",
+        "zip": "10036",
         "boro": "Manhattan",
-        "lat": "40.739449",
-        "long": "-73.982105",
-        "num": "917-544-0735"
+        "lat": "40.758304",
+        "long": "-73.981186",
+        "num": "212-750-8188"
+    },
+    {
+        "name": "Kelly Services",
+        "strAdress": "237 Park Ave",
+        "zip": "10016",
+        "boro": "Manhattan",
+        "lat": "40.748060",
+        "long": "-73.980258",
+        "num": "212-750-8188"
+    },
+    {
+        "name": "Temporary Alternatives",
+        "strAdress": "295 Madison Ave",
+        "zip": "10017",
+        "boro": "Manhattan",
+        "lat": "40.751678",
+        "long": "-73.979547",
+        "num": "212-779-7169"
     },
 ];
 var lawmarkers= [
