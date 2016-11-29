@@ -9557,6 +9557,80 @@ var foodmarkers= [
         "long": "-74.219768",
         "num": "Call 311 for hours"
     }
-]
+];
+var healthmarkers= [
+    {
+        "name": "New York City Free Clinic",
+        "strAdress": "16 East 16th Street",
+        "zip": "10003",
+        "boro": "Manhattan",
+        "lat": "40.739449",
+        "long": "-73.982105",
+        "num": "917-544-0735"
+    },
+    {
+        "name": "Weill Cornell Community Clinic",
+        "strAdress": "505 East 70th Street, 1st Floor",
+        "zip": "10021",
+        "boro": "Manhattan",
+        "lat": "40.765694",
+        "long": "-73.954109",
+        "num": "646-962-9222"
+    },
+    {
+        "name": "Mount Sinai Adolescent Health Care Clinic",
+        "strAdress": "312 East 94th Street",
+        "zip": "10128",
+        "boro": "Manhattan",
+        "lat": "40.782333",
+        "long": "-73.947188",
+        "num": "212-423-3000"
+    },
+    {
+        "name": "East Harlem Health Outreach Program - Mount Sinai",
+        "strAdress": "17 East 102nd Street, 7th Floor",
+        "zip": "10029",
+        "boro": "Manhattan",
+        "lat": "40.791484",
+        "long": "-73.952012",
+        "num": "626-942-6519"
+    },
+    {
+        "name": "Columbia Student Medical Outreach",
+        "strAdress": "21 Audubon Avenue",
+        "zip": "10033",
+        "boro": "Manhattan",
+        "lat": "40.839390",
+        "long": "-73.938742",
+        "num": "212-342-4719"
+    },
+    {
+        "name": "Columbia-Harlem Homeless Medical Partnership",
+        "strAdress": "St. Mary's Episcopal Church, 521 West 126th Street",
+        "zip": "10027",
+        "boro": "Manhattan",
+        "lat": "40.814974",
+        "long": "-73.956019",
+        "num": "347-614-2121"
+    },
+    {
+        "name": "St. Anthony's Free Clinic",
+        "strAdress": "421 East 155th Street",
+        "zip": "10453",
+        "boro": "Bronx",
+        "lat": "40.820149",
+        "long": "-73.914967",
+        "num": "718-401-9705"
+    },
+    {
+        "name": "ECHO Free Clinic",
+        "strAdress": "1894 Walton Ave",
+        "zip": "10455",
+        "boro": "Bronx",
+        "lat": "40.849610",
+        "long": "-73.909025",
+        "num": "800-836-1316"
+    }
 
+];
 //module.exports = markers;

@@ -71,6 +71,39 @@ function initMap() {
         }, 500);
 
     })
+
+    $(".health").on("click", function(){
+
+        var cardview = $('#map-cards');
+
+        cardview.empty();
+
+        for (i = 0; i < healthmarkers.length; i++) {
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(healthmarkers[i].lat, healthmarkers[i].long),
+                map: map
+            });
+
+            var data = healthmarkers[i];
+
+            addName(marker, data.name,data);
+        }
+
+        setTimeout(function(){ $('#iconwrap').addClass('open'); }, 100);
+
+        setTimeout(function(){
+
+            for (i = 0; i < healthmarkers.length; i++) {
+
+                var data = healthmarkers[i];
+                var newCard = makeCard(data.name, data.strAdress);
+
+                cardview.prepend(newCard);
+            }
+
+        }, 500);
+
+    })
 };
 
 function addName(marker, message, data) {
